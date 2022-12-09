@@ -21,6 +21,23 @@ href="icons/favicon-32x32.png">
     <li><a href="contact.html">Contact/Socials</a></li>
 
 <body>
+<p id="clicker">Click here three times to open the link</p>
+<a href="https://www.example.com" id="link" style="display:none">Example Link</a>
+
+<script>
+const clicker = document.getElementById('clicker');
+const link = document.getElementById('link');
+let clickCount = 0;
+
+clicker.addEventListener('click', () => {
+  clickCount++;
+
+  if (clickCount >= 3) {
+    link.style.display = 'block';
+    window.open(link.href);
+  }
+});
+</script>
 
 <br><br><br><br><br><br><br><br><br> <br><br><br><br>
     <p2> 
