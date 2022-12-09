@@ -21,27 +21,29 @@ href="icons/favicon-32x32.png">
     <li><a href="contact.html">Contact/Socials</a></li>
 
 <body>
-<p id="clicker">Click here three times to open the link</p>
-<a href="https://www.example.com" id="link" style="display:none">Example Link</a>
 
-<script>
-const clicker = document.getElementById('clicker');
-const link = document.getElementById('link');
-let clickCount = 0;
-
-clicker.addEventListener('click', () => {
-  clickCount++;
-
-  if (clickCount >= 3) {
-    link.style.display = 'block';
-    window.open(link.href);
-  }
-});
-</script>
 
 <br><br><br><br><br><br><br><br><br> <br><br><br><br>
     <p2> 
-        // Current State Of Affairs //<br><br><br><br><br>
+      <p id="clicker">// Current State Of Affairs //</p>
+      <a href="s.html" id="link" style="display:none">how comes you clicked 3 times???</a>
+      
+      <script>
+      const clicker = document.getElementById('clicker');
+      const link = document.getElementById('link');
+      let clickCount = 0;
+      
+      clicker.addEventListener('click', () => {
+        clickCount++;
+      
+        if (clickCount >= 3) {
+          link.style.display = 'block';
+
+          window.open(link.href);
+        }
+      });
+      </script>
+        <br><br><br><br><br>
         • Currently working on The Obscure Unsolved Mysteries Iceberg. <br>
         • Also working on Orphillus.com (this website) <br>
         • A collaboration with <a href="https://youtube.com/nightfair"> nightfair</a> is coming soon. <br>
